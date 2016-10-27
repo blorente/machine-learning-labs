@@ -2,7 +2,6 @@ num_iters = 1500;
 alpha = 0.01;
 
 % Cargar ejemplos
-
 examples = load('data/ex1data1.txt');
 m = rows(examples);
 
@@ -11,7 +10,6 @@ m = rows(examples);
 % para poder calcular la hipótesis como 
 % h(x) = [O0, O1, ..., On-1, On] * [1, x(1), ..., x(n-1), x(n)] =
 % h(x) = vector de O traspuesto (en horizontal) * vector de x
-
 X = [ones(m, 1) examples(:, 1)];
 Y = examples(:, 2);
 
