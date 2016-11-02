@@ -28,9 +28,3 @@ function I = mcint(fun, a, b, num_puntos)
 	I = (debajo / num_puntos)*(b - a)*maxY;
 endfunction
 ```
-
-## Resultados
-| Graphs | Results     |
-| :------------- | :------------- |
-|        | **mcint:**      |
-|        | **quad:**      |
