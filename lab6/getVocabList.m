@@ -1,12 +1,12 @@
 function vocabList = getVocabList()
 %GETVOCABLIST reads the fixed vocabulary list in vocab.txt and returns a
 %cell array of the words
-%   vocabList = GETVOCABLIST() reads the fixed vocabulary list in vocab.txt 
+%   vocabList = GETVOCABLIST() reads the fixed vocabulary list in vocab.txt
 %   and returns a cell array of the words in vocabList.
 
 
 %% Read the fixed vocabulary list
-fid = fopen('vocab.txt');
+fid = fopen('files/vocab.txt');
 
 % Store all dictionary words in cell array vocab{}
 n = 1899;  % Total number of words in the dictionary
