@@ -1,0 +1,1 @@
+X = dlmread('rawdata/starcraft.csv', ',');
