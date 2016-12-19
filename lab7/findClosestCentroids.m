@@ -4,7 +4,6 @@ function idx = findClosestCentroids(X,  centroids)
   k = rows(centroids);
   idx = zeros(m, 1);
 
-  size(X)
   % Distances to each centroid
   distances = zeros(m, k);
   for i = 1:k
