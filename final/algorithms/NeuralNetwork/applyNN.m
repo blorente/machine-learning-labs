@@ -18,5 +18,5 @@ function [correct, ratio] = applyNN(X_train, y_train, X_test, y_test, input_laye
   hypotheses = hypothesis(X_test, Theta1, Theta2);
   printf('\n');
   printf('Results:\n');
-  [correct, ratio] = countCorrectNN(hypotheses, y_test);
+  [correct, ratio] = countCorrect(hypotheses, y_test);
 end

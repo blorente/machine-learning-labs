@@ -26,7 +26,7 @@ function [correct, ratio] = generateModelsFromPool(X, y, X_val, y_val, pool, kin
       % Calculate correctness and output result
       correct(i, j) = sum(y_val == prediction);
       ratio(i, j) = correct(i, j) / m;
-      printf('C: %f\nsigma: %f\ncorrect: %f\nperc. of total: %.2f\n', C, sigma, correct(i, j), (ratio(i, j) * 100));
+      printf('C: %f\nsigma: %f\ncorrect: %f\nperc. of total: %.2f\n\n', C, sigma, correct(i, j), (ratio(i, j) * 100));
 
       % Save information for the prediction graph data:
       prediction_graph(fig, :) = [C, sigma, ratio(i, j) * 100];

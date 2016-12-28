@@ -1,6 +1,5 @@
 source('algorithms/NeuralNetwork//applyNN.m');
 source('algorithms/NeuralNetwork//costNN.m');
-source('algorithms/NeuralNetwork//countCorrectNN.m');
 source('algorithms/NeuralNetwork//createInitialThetas.m');
 source('algorithms/NeuralNetwork//dsigmoid.m');
 source('algorithms/NeuralNetwork//fmincg.m');

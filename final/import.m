@@ -1,3 +1,4 @@
+clear all; 
 warning('off');
 
 % Import functions

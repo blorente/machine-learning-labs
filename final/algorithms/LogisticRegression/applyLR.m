@@ -10,6 +10,7 @@ function [correct, ratio] = applyLR(X, y, nr_tags, lambda, iterations)
 
 	X_ext = [ones(rows(X), 1) X];
 	[all_theta] = oneVsAll(X_ext, y, nr_tags, lambda, iterations);
-	[correct, ratio] = countCorrect(X_ext, y, all_theta);
+	predictions = predict(all_theta, X_ext);
+	[correct, ratio] = countCorrect(predictions, y);
 	printf('Done!\n\n');
 end
