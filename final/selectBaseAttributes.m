@@ -4,4 +4,5 @@ function [X, y] = selectBaseAttributes(raw_data)
 	y = raw_data(:, 2);
 	% The attributes are APM and WorkersCreated
 	X = [raw_data(:, 6), raw_data(:, 17)];
+	X = [raw_data(:, 6:17)];
 end

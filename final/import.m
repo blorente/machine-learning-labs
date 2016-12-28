@@ -1,4 +1,4 @@
-clear all; 
+clear all;
 warning('off');
 
 % Import functions
@@ -16,7 +16,7 @@ raw_data = raw_data(2:rows(raw_data), :);
 num_labels = 8;
 
 % LR parameters
-iterations_LR = 50;
+iterations_LR = 100;
 lambda_LR = 0.01;
 [correct_lr, ratio_lr] = applyLR(X, y, num_labels, lambda_LR, iterations_LR);
 
@@ -26,8 +26,8 @@ waitPress();
 % NN parameters
 input_layer_size = columns(X_train);
 hidden_layer_size = 25;
-lambda_nn = 0.01;
-iterations_NN = 100;
+lambda_nn = 2;
+iterations_NN = 1000;
 
 [correct_nn, ratio_nn] = applyNN(X_train, y_train, X_test, y_test, input_layer_size, hidden_layer_size, num_labels, lambda_nn, iterations_NN);
 
