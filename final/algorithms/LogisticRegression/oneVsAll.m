@@ -1,7 +1,7 @@
-function [all_theta] = oneVsAll(X, y, num_labels, lambda)
+function [all_theta] = oneVsAll(X, y, num_labels, lambda, iterations)
 	% X ya ha sido extendida
 	initial_theta = zeros(columns(X), 1);
-	options = optimset('GradObj', 'on', 'MaxIter', 50);
+	options = optimset('GradObj', 'on', 'MaxIter', iterations);
 
 	all_theta = zeros(columns(X),  num_labels);
 	for i = 1:num_labels

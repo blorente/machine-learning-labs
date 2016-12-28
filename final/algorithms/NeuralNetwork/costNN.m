@@ -1,4 +1,4 @@
-function [J, grad] = costeRN(params_rn, num_attribs, nodos_ocultos, num_etiquetas, X, y, lambda)
+function [J, grad] = costNN(params_rn, num_attribs, nodos_ocultos, num_etiquetas, X, y, lambda)
   % Capturar las matrices de pesos originales
   Theta1 = reshape (params_rn(1:nodos_ocultos * (num_attribs + 1)), nodos_ocultos, (num_attribs + 1));
   Theta2 = reshape (params_rn((1 + (nodos_ocultos * (num_attribs + 1))):end), num_etiquetas, (nodos_ocultos + 1));
