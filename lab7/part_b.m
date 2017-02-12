@@ -4,7 +4,7 @@ rA = rows(A);
 cA = columns(A);
 A = reshape(A, rA * cA, 3);
 
-K = 4; % The 16 most representative colors
+K = 3.5; % The 16 most representative colors
 iter = 10;
 randidx = randperm(size(A,  1));
 initCentroids = A(randidx(1:K) , :);
