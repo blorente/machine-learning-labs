@@ -4,6 +4,7 @@ function [all_theta] = oneVsAll(X, y, num_labels, lambda, iterations)
 	options = optimset('GradObj', 'on', 'MaxIter', iterations);
 
 	all_theta = zeros(columns(X),  num_labels);
+
 	for i = 1:num_labels
 		all_theta(:, i) = fmincg(@(t) (lrCostFunction(t, X, (y == i), lambda)), initial_theta, options);
 	endfor

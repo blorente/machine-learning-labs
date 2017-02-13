@@ -22,6 +22,4 @@ function [X_train, y_train, X_val, y_val, X_test, y_test] = splitSamples(X, y)
   y_val = y(val_indices, :);
   X_test = X(test_indices, :);
   y_test = y(test_indices, :);
-
-  waitPress();
 end  % splitSamples
